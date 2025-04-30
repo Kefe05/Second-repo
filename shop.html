@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interior decor - Our Products</title>
+    <link rel="stylesheet" href="./styles/products/products.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/hero.css" />
+    <link rel="stylesheet" href="./styles/service.css" />
+    <link rel="stylesheet" href="./styles/menu-bar.css" />
+    <link rel="stylesheet" href="./styles/mobile-nav.css" />
+    <link rel="stylesheet" href="./styles/steps.css" />
+    <link rel="stylesheet" href="./styles/home-designs.css" />
+    <link rel="stylesheet" href="./styles/testimonial.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <!-- Navigation would go here -->
+    <header class="header container" id="header">
+      <div id="logo">
+        <img src="./assets/Logo.png" alt="Logo" id="logo-img" />
+      </div>
+      <nav class="navigation_menu">
+        <div class="flex-gap">
+          <a href="#" class="nav_links">Home</a>
+          <a href="#" class="nav_links">Services</a>
+          <a href="#" class="nav_links">Contact</a>
+          <a href="/shop.html" class="nav_links">Shop Now</a>
+          <a href="#" class="nav_links">Support</a>
+        </div>
+      </nav>
+      <button class="black-btn">Sign Up</button>
+      <i class="fa-solid fa-bars" id="menu"></i>
+
+      <!-- Mobile navigation-menu -->
+      <div class="mobile_nav" id="mobile">
+        <ul class="mobile_navigation-links">
+          <li><a href="#" class="link">Home</a></li>
+          <li><a href="#our-service" class="link">Services</a></li>
+          <li><a href="#designs" class="link">Category</a></li>
+          <li><a href="#testimony" class="link">Testimonial</a></li>
+          <li>
+            <a href="#" class="link">
+              <button class="black-btn">Sign Up</button>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- Hero Carousel Section -->
+    <section class="hero-carousel">
+      <h1>Today's Featured Collection</h1>
+      <div class="carousel-container">
+        <div class="carousel-slide">
+          <!-- Slides will be added dynamically with JavaScript -->
+        </div>
+        <button class="carousel-btn prev-btn">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="carousel-btn next-btn">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="carousel-indicators"></div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+      <h2>Shop By Category</h2>
+      <div class="categories-grid">
+        <!-- Categories will be added dynamically or statically -->
+        <div class="category-card">
+          <img src="./assets/product-heo.jpg" alt="Furniture" />
+          <h3>Furniture</h3>
+        </div>
+        <div class="category-card">
+          <img src="./assets/lighting.jpg" alt="Lighting" />
+          <h3>Lighting</h3>
+        </div>
+        <div class="category-card">
+          <img src="./assets/textile.jpg" alt="Textiles" />
+          <h3>Textiles</h3>
+        </div>
+        <div class="category-card">
+          <img src="./assets/curtain.jpg" alt="Wall Decor" />
+          <h3>Wall Decor</h3>
+        </div>
+        <div class="category-card">
+          <img src="./assets/product-heo.jpg" alt="Decor Accessories" />
+          <h3>Decor Accessories</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+      <div class="products-header">
+        <h2>All Products</h2>
+        <div class="filter-options">
+          <select id="category-filter">
+            <option value="all">All Categories</option>
+            <option value="furniture">Furniture</option>
+            <option value="lighting">Lighting</option>
+            <option value="textiles">Textiles</option>
+            <option value="wall-decor">Wall Decor</option>
+            <option value="decor-accessories">Decor Accessories</option>
+          </select>
+          <select id="price-filter">
+            <option value="all">All Prices</option>
+            <option value="0-50">$0 - $50</option>
+            <option value="50-100">$50 - $100</option>
+            <option value="100-200">$100 - $200</option>
+            <option value="200+">$200+</option>
+          </select>
+          <select id="sort-by">
+            <option value="featured">Featured</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="newest">Newest</option>
+          </select>
+        </div>
+      </div>
+      <div class="products-grid">
+        <!-- Products will be added dynamically with JavaScript -->
+      </div>
+      <div class="pagination">
+        <button class="page-btn" disabled>
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <span class="page-numbers">1</span>
+        <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </section>
+
+    <!-- Footer would go here -->
+
+    <script src="./index.js"></script>
+  </body>
+</html>

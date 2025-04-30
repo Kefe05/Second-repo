@@ -1,0 +1,158 @@
+.hero{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+}
+
+.hero_container{
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.hero_container-one{
+  align-items: center;
+}
+.hero_container-one div{
+  flex: 1;
+
+}
+.hero_container-one div h2{
+  font-size: var(--size-5xl);
+  padding-block: 0;
+
+}
+.hero_container-two{
+  position: relative;
+}
+
+.hero_container-two{
+  gap: 20px;
+}
+
+.hero-two-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.hero p{
+  color: #545454;
+  font-size: 21px;
+}
+ 
+
+
+.all-count{
+  display: flex;
+  gap: 30px;
+  margin-inline: auto;
+}
+
+
+
+
+.hero h2{
+  font-size: 50px;
+  font-weight: 700;
+  padding: 0;
+  line-height: 80px; 
+}
+
+#start{
+  width: 170px;
+  font-size: var(--size-xl);
+}
+
+ #arrow{
+  background-color:  black;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 60px;
+  font-weight: 300; 
+}
+
+
+@media (min-width: 300px) {
+  .hero_container{
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .hero_container-one div h2{
+    margin-top: 0;
+  }
+
+  .hero_container p{
+    margin-inline: auto;
+    font-size: var(--size-base)
+  }
+  .hero_container img{
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .count{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    color: #545454;
+  }
+  .count >.count-detail{
+    font-size: 16px;
+  }
+
+  .hero-two-content{
+    gap: 20px;
+  }
+
+  #start{
+    margin-inline: auto;
+    width: 170px;
+    font-size: var(--size-xl);
+  }
+  #arrow{
+    font-size: 30px;
+  }
+  
+}
+/* @media (min-width:640px) {} */
+@media (min-width: 768px) {  
+}
+@media (min-width:1040px) {
+  .hero_container{
+    flex-direction: row;
+    text-align: start;
+  }
+
+  .hero_container p{
+    margin-inline: 0;
+    font-size: 21px;
+  }
+
+  .hero_container-two img{
+    width: 100%;
+  }
+
+  .count{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+    color: #545454;
+  }
+  .count >.count-detail{
+    font-size: 20px;
+  }
+}
+/* @media (min-width:1240px) {} */
+/* @media (min-width:1560px) {} */
+
+

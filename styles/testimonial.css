@@ -1,0 +1,168 @@
+.testimonial{
+  position: relative;
+}
+.testimonies{
+  bottom: 0;
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  left: 300px;
+}
+
+#testimonial-image, .testimony-ctn{
+  flex: 1;
+}
+
+.testimonial h2{
+  font-size: var(--size-2xl);
+}
+.testimony{
+  color: white;
+  background-color: black;
+  padding: 20px;
+  height: fit-content;
+}
+
+.testimony p{
+  font-size: var(--size-base);
+  color: #d5d4d4;
+}
+ 
+.container_image img{
+  width: 100%;
+}
+.content-details{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.content-details-image{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.content-details-image img{
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  border-radius: 50%;
+}
+.user-details{
+  display: flex;
+  flex-direction: column;
+}
+
+#newsletter{
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 40px auto;
+}
+
+
+
+
+
+
+
+#newsletter input{
+  width: 100%;
+  padding: 15px 40px;
+
+   border: 1px solid rgba(128, 128, 128 );
+  opacity: 0.9;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #54545422;
+}
+
+#newsletter   button{
+  position: absolute;
+  bottom: 12%;
+  right: 1%;
+  background-color: #000;
+  color: white;
+  padding: 10px;
+  border: none;
+}
+
+
+
+@media (min-width: 300px) {
+  .testimonial {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .testimonies{
+    position: static;
+    flex-direction: column;
+  }
+
+  #newsletter h2{
+    margin: auto;
+    font-size: 25px;
+    width: 80%;
+  }
+
+  #newsletter p{
+    font-size: 16px;
+    width: 80%;
+    margin: auto;
+  }
+
+  .testimony{
+    width: 100%;
+  }
+
+  #newsletter div{
+    width: 290px;
+    position: relative;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .testimonial{
+    flex-direction: row;
+  }
+  .testimonies{
+    position: absolute;
+    height:100%;
+    left: 200px;
+    flex-direction: row;
+  }
+
+  .testimony{
+    width: 400px;
+  }
+
+  #newsletter  p{
+    font-size: 18px;
+    width: 50%;
+    margin: auto;
+  }
+
+  #newsletter h2{
+    font-size: 30px;
+    width: 50%;
+    margin: auto;
+  }
+
+  #newsletter div{
+    width: 500px;
+    position: relative;
+    margin: auto;
+  }
+}
+
+@media   (min-width: 1120px) {
+ .testimonies{
+   left: 300px;
+ }
+}
